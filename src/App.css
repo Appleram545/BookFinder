@@ -1,0 +1,119 @@
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #494987, #3a8195);
+  color: white;
+  min-height: 100vh;
+}
+
+.app {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #ffcc00;
+}
+
+form {
+  margin-bottom: 30px;
+}
+
+input {
+  padding: 12px 15px;
+  width: 60%;
+  max-width: 400px;
+  border-radius: 25px;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+}
+
+button {
+  margin-left: 10px;
+  padding: 12px 20px;
+  background-color: #ffcc00;
+  color: #000;
+  font-weight: 600;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background-color: #ffdd33;
+}
+
+.loading,
+.error {
+  margin-top: 15px;
+  color: #ffb347;
+}
+
+.book-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.book-card {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  padding: 15px;
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.book-card:hover {
+  transform: translateY(-5px);
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.book-card img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.book-card h3 {
+  font-size: 1.1rem;
+  margin: 10px 0 5px;
+}
+
+.book-card p {
+  margin: 0;
+  color: #ddd;
+  font-size: 0.9rem;
+}
+
+.year {
+  font-style: italic;
+  color: #ffcc00;
+}
+
+
+.load-more-container {
+  margin: 30px 0;
+}
+
+.load-more {
+  padding: 12px 30px;
+  background: linear-gradient(90deg, #ffcc00, #ffdd33);
+  color: #000;
+  font-weight: bold;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(255, 204, 0, 0.3);
+  transition: all 0.3s ease;
+}
+
+.load-more:hover {
+  transform: translateY(-3px);
+  background: linear-gradient(90deg, #ffdd33, #ffee66);
+  box-shadow: 0 6px 15px rgba(255, 204, 0, 0.4);
+}
