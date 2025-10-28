@@ -5,7 +5,7 @@ const App = () => {
   const [query, setQuery] = useState("");
   const [books, setBooks] = useState([]);
   const [status, setStatus] = useState("");
-  const [visible, setVisible] = useState(20); 
+  const [visible, setVisible] = useState(18); 
 
   const searchBooks = async (e) => {
     e.preventDefault();
@@ -18,7 +18,7 @@ const App = () => {
 
       if (data.docs?.length) {
         setBooks(data.docs);
-        setVisible(20);
+        setVisible(18);
         setStatus("");
       } else {
         setBooks([]);
@@ -29,7 +29,7 @@ const App = () => {
     }
   };
 
-  const loadMore = () => setVisible((prev) => prev + 20);
+  const loadMore = () => setVisible((prev) => prev + 18);
 
   return (
     <div className="app">
